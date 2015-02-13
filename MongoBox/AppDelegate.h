@@ -14,7 +14,7 @@
 
 - (IBAction)startTask:(id)sender;
 - (IBAction)stopTask:(id)sender;
-- (IBAction)changeLogViewState:(id)sender;
+- (IBAction)showLogView:(id)sender;
 
 @property (weak) IBOutlet NSMenuItem *openPreferences;
 @property (unsafe_unretained) IBOutlet NSTextView *logView;

@@ -31,6 +31,11 @@
     self.statusItem.alternateImage = [NSImage imageNamed:@"FloppyAlt"];
     
     self.logView.font = [NSFont fontWithName:@"Menlo" size:11.0];
+    self.logView.textColor = [NSColor colorWithCalibratedWhite:0.9 alpha:1.0];
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowLogOnStartup"]) {
+        [self showLogView:self];
+    }
     
     // Check or create DB folder
     if ([self makeDBPath:[[NSUserDefaults standardUserDefaults] stringForKey:@"DBPath"]] == NO) {
@@ -62,7 +67,7 @@
     return NO;
 }
 
-- (IBAction)changeLogViewState:(id)sender {
+- (IBAction)showLogView:(id)sender {
     [self.logWindow makeKeyAndOrderFront:self];
 }
 

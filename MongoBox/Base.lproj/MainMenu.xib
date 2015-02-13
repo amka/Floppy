@@ -719,7 +719,7 @@
             </view>
             <point key="canvasLocation" x="376" y="190"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="0fv-IO-gMR" userLabel="Log Window">
+        <window title="Mongo Log" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="0fv-IO-gMR" userLabel="Log Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="163" y="199" width="480" height="270"/>
@@ -730,17 +730,18 @@
                 <subviews>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="A20-am-aQc">
                         <rect key="frame" x="-1" y="-1" width="482" height="272"/>
-                        <clipView key="contentView" id="zBZ-IS-pd6">
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="zBZ-IS-pd6">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Zbh-QK-PVK">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="bar" incrementalSearchingEnabled="YES" continuousSpellChecking="YES" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Zbh-QK-PVK">
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11799999999999999" green="0.125" blue="0.157" alpha="1" colorSpace="calibratedRGB"/>
                                     <size key="minSize" width="465" height="270"/>
                                     <size key="maxSize" width="482" height="10000000"/>
-                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="insertionPointColor" red="0.92668876262626265" green="0.92668876262626265" blue="0.92668876262626265" alpha="1" colorSpace="calibratedRGB"/>
                                     <size key="minSize" width="465" height="270"/>
                                     <size key="maxSize" width="482" height="10000000"/>
                                 </textView>
@@ -775,7 +776,7 @@
                 <menuItem title="Show log" id="muu-4n-IQl">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="changeLogViewState:" target="Voe-Tx-rLC" id="U0a-4D-upx"/>
+                        <action selector="showLogView:" target="Voe-Tx-rLC" id="5W2-xx-hFX"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Preferences" id="Ia4-kE-jEp">
