@@ -30,6 +30,8 @@
     self.statusItem.image = [NSImage imageNamed:@"Floppy"];
     self.statusItem.alternateImage = [NSImage imageNamed:@"FloppyAlt"];
     
+    self.logView.font = [NSFont fontWithName:@"Menlo" size:11.0];
+    
     // Check or create DB folder
     if ([self makeDBPath:[[NSUserDefaults standardUserDefaults] stringForKey:@"DBPath"]] == NO) {
         self.logView.string = NSLocalizedString(@"Can not create DB directory", @"");

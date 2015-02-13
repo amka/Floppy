@@ -728,13 +728,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A20-am-aQc">
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="A20-am-aQc">
                         <rect key="frame" x="-1" y="-1" width="482" height="272"/>
                         <clipView key="contentView" id="zBZ-IS-pd6">
                             <rect key="frame" x="1" y="1" width="223" height="133"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Zbh-QK-PVK">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Zbh-QK-PVK">
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="270"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -745,7 +745,7 @@
                                     <size key="maxSize" width="482" height="10000000"/>
                                 </textView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="w4w-NY-asD">
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
@@ -764,7 +764,7 @@
                     <constraint firstItem="A20-am-aQc" firstAttribute="leading" secondItem="wPo-AL-zwz" secondAttribute="leading" constant="-1" id="Wc3-RC-IZ2"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="281" y="563"/>
+            <point key="canvasLocation" x="274" y="523"/>
         </window>
         <menu id="KKI-zZ-odl" userLabel="Main Menu">
             <items>
@@ -789,6 +789,7 @@
                     </connections>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="101.5" y="256.5"/>
         </menu>
     </objects>
 </document>
