@@ -12,6 +12,7 @@
 
 @property (weak) IBOutlet NSWindow *window;
 @property (strong, nonatomic) NSStatusItem *statusItem;
+@property (weak) IBOutlet NSWindow *logWindow;
 
 @end
 
@@ -60,6 +61,7 @@
 }
 
 - (IBAction)changeLogViewState:(id)sender {
+    [self.logWindow makeKeyAndOrderFront:self];
 }
 
 - (void)startTask:(id)sender {
@@ -113,7 +115,7 @@
                 NSString *outStr = [[NSString alloc] initWithData:output encoding:NSUTF8StringEncoding];
                 
                 dispatch_sync(dispatch_get_main_queue(), ^{
-                    self.logView.string = [self.logView.string stringByAppendingString:[NSString stringWithFormat:@"\n%@", outStr]];
+                    self.logView.string = [self.logView.string stringByAppendingString:[NSString stringWithFormat:@"%@", outStr]];
                     // Scroll to end of outputText field
                     NSRange range;
                     range = NSMakeRange([self.logView.string length], 0);
