@@ -50,10 +50,11 @@
     } else {
         NSError *error;
         [fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-        NSLog(@"%@", error);
         if (error == nil) {
             return YES;
-        } else return NO;
+        } else {
+            self.logView.string = error.localizedDescription;
+        }
     }
     return NO;
 }
@@ -77,6 +78,9 @@
 
 - (void)stopTask:(id)sender {
     // Empty yet
+    if (self.mongoTask.isRunning) {
+        [self.mongoTask terminate];
+    }
 }
 
 - (void)runScript:(NSArray*)arguments {
