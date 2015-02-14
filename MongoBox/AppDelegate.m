@@ -6,8 +6,11 @@
 //  Copyright (c) 2015 Andrey M. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import <CCNPreferencesWindowController.h>
+
+#import "AppDelegate.h"
+#import "PreferencesGeneralViewController.h"
+#import "PreferencesUpdateViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,6 +36,13 @@
     
     self.logView.font = [NSFont fontWithName:@"Menlo" size:11.0];
     self.logView.textColor = [NSColor colorWithCalibratedWhite:0.9 alpha:1.0];
+    
+    self.preferences = [CCNPreferencesWindowController new];
+    self.preferences.centerToolbarItems = NO;
+    [self.preferences setPreferencesViewControllers:@[
+        [PreferencesGeneralViewController new],
+        [PreferencesUpdateViewController new],
+    ]];
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowLogOnStartup"]) {
         [self showLogView:self];
@@ -92,7 +102,7 @@
 }
 
 - (IBAction)openPreferences:(id)sender {
-    
+    [self.preferences showPreferencesWindow];
 }
 
 - (void)runScript:(NSArray*)arguments {

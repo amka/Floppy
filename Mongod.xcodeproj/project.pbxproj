@@ -13,6 +13,10 @@
 		2A19F85E1A8E5BF9003F9335 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A19F85D1A8E5BF9003F9335 /* DefaultPreferences.plist */; };
 		2A319B9B1A8EC7050099913A /* mongod in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A319B9A1A8EC7050099913A /* mongod */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2A319B9C1A8EC86C0099913A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1768441A80F76900A7790F /* MainMenu.xib */; };
+		2A7CBDF21A8FA5EF002688B7 /* PreferencesGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBDF01A8FA5EF002688B7 /* PreferencesGeneralViewController.m */; };
+		2A7CBDF31A8FA5EF002688B7 /* PreferencesGeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBDF11A8FA5EF002688B7 /* PreferencesGeneralViewController.xib */; };
+		2A7CBDF81A8FA625002688B7 /* PreferencesUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBDF61A8FA625002688B7 /* PreferencesUpdateViewController.m */; };
+		2A7CBDF91A8FA625002688B7 /* PreferencesUpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBDF71A8FA625002688B7 /* PreferencesUpdateViewController.xib */; };
 		BB927A739082A76481B19D35 /* libPods-Floppy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D7906F02A86D594F172B45 /* libPods-Floppy.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,12 @@
 		2A1768511A80F76900A7790F /* MongoBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MongoBoxTests.m; sourceTree = "<group>"; };
 		2A19F85D1A8E5BF9003F9335 /* DefaultPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPreferences.plist; sourceTree = "<group>"; };
 		2A319B9A1A8EC7050099913A /* mongod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mongod; path = MongoBox/mongo/mongod; sourceTree = "<group>"; };
+		2A7CBDEF1A8FA5EF002688B7 /* PreferencesGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesGeneralViewController.h; sourceTree = "<group>"; };
+		2A7CBDF01A8FA5EF002688B7 /* PreferencesGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesGeneralViewController.m; sourceTree = "<group>"; };
+		2A7CBDF11A8FA5EF002688B7 /* PreferencesGeneralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesGeneralViewController.xib; sourceTree = "<group>"; };
+		2A7CBDF51A8FA625002688B7 /* PreferencesUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesUpdateViewController.h; sourceTree = "<group>"; };
+		2A7CBDF61A8FA625002688B7 /* PreferencesUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesUpdateViewController.m; sourceTree = "<group>"; };
+		2A7CBDF71A8FA625002688B7 /* PreferencesUpdateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesUpdateViewController.xib; sourceTree = "<group>"; };
 		3508D4185D949BB724B507FA /* Pods-Floppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Floppy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Floppy/Pods-Floppy.debug.xcconfig"; sourceTree = "<group>"; };
 		EA5326B6320A83A45B77B0EC /* Pods-Floppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Floppy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Floppy/Pods-Floppy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +96,7 @@
 				2A1768421A80F76900A7790F /* Images.xcassets */,
 				2A1768441A80F76900A7790F /* MainMenu.xib */,
 				2A17683B1A80F76900A7790F /* Supporting Files */,
+				2A7CBDF41A8FA5FB002688B7 /* ViewControllers */,
 			);
 			path = MongoBox;
 			sourceTree = "<group>";
@@ -115,6 +126,19 @@
 				2A1768501A80F76900A7790F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A7CBDF41A8FA5FB002688B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A7CBDEF1A8FA5EF002688B7 /* PreferencesGeneralViewController.h */,
+				2A7CBDF01A8FA5EF002688B7 /* PreferencesGeneralViewController.m */,
+				2A7CBDF11A8FA5EF002688B7 /* PreferencesGeneralViewController.xib */,
+				2A7CBDF51A8FA625002688B7 /* PreferencesUpdateViewController.h */,
+				2A7CBDF61A8FA625002688B7 /* PreferencesUpdateViewController.m */,
+				2A7CBDF71A8FA625002688B7 /* PreferencesUpdateViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		86BA18DCF2428979C4A238CE /* Frameworks */ = {
@@ -194,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7CBDF91A8FA625002688B7 /* PreferencesUpdateViewController.xib in Resources */,
+				2A7CBDF31A8FA5EF002688B7 /* PreferencesGeneralViewController.xib in Resources */,
 				2A19F85E1A8E5BF9003F9335 /* DefaultPreferences.plist in Resources */,
 				2A1768431A80F76900A7790F /* Images.xcassets in Resources */,
 				2A319B9C1A8EC86C0099913A /* MainMenu.xib in Resources */,
@@ -240,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7CBDF81A8FA625002688B7 /* PreferencesUpdateViewController.m in Sources */,
 				2A1768411A80F76900A7790F /* main.m in Sources */,
 				2A17683F1A80F76900A7790F /* AppDelegate.m in Sources */,
+				2A7CBDF21A8FA5EF002688B7 /* PreferencesGeneralViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

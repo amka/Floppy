@@ -12,7 +12,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) CCNPreferencesWindowController *preferences;
+@property CCNPreferencesWindowController *preferences;
 @property (weak) IBOutlet NSMenu *mainMenu;
 @property (weak) IBOutlet NSTextField *welcomeLabel;
 

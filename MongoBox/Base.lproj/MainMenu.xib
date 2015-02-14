@@ -784,6 +784,9 @@
                 </menuItem>
                 <menuItem title="Preferences" id="Ia4-kE-jEp">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openPreferences:" target="Voe-Tx-rLC" id="1YD-Yf-cKM"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="JbO-Oe-eBp"/>
                 <menuItem title="Quit" id="SVg-R6-MKA">
