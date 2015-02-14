@@ -102,7 +102,7 @@
         
         @try {
             
-            NSString *path = [NSString stringWithFormat:@"%@", [[NSBundle mainBundle] pathForResource:@"mongod" ofType:@"" inDirectory:@"mongo"]];
+            NSString *path = [NSString stringWithFormat:@"%@", [[NSBundle mainBundle] pathForResource:@"mongod" ofType:@"" inDirectory:@"Mongo"]];
             
             NSLog(@"path: %@", path);
             

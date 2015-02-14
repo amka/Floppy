@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A1768371A80F76900A7790F"
-               BuildableName = "MongoBox.app"
-               BlueprintName = "MongoBox"
+               BuildableName = "Floppy.app"
+               BlueprintName = "Floppy"
                ReferencedContainer = "container:Floppy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "MongoBox.app"
-            BlueprintName = "MongoBox"
+            BuildableName = "Floppy.app"
+            BlueprintName = "Floppy"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "MongoBox.app"
-            BlueprintName = "MongoBox"
+            BuildableName = "Floppy.app"
+            BlueprintName = "Floppy"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "MongoBox.app"
-            BlueprintName = "MongoBox"
+            BuildableName = "Floppy.app"
+            BlueprintName = "Floppy"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

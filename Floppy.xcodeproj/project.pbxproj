@@ -10,11 +10,10 @@
 		2A17683F1A80F76900A7790F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A17683E1A80F76900A7790F /* AppDelegate.m */; };
 		2A1768411A80F76900A7790F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1768401A80F76900A7790F /* main.m */; };
 		2A1768431A80F76900A7790F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1768421A80F76900A7790F /* Images.xcassets */; };
-		2A1768461A80F76900A7790F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1768441A80F76900A7790F /* MainMenu.xib */; };
 		2A1768521A80F76900A7790F /* MongoBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1768511A80F76900A7790F /* MongoBoxTests.m */; };
-		2A19F85A1A8E588B003F9335 /* mongo in Resources */ = {isa = PBXBuildFile; fileRef = 2A19F8591A8E588B003F9335 /* mongo */; };
-		2A19F85C1A8E58FE003F9335 /* mongo in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A19F8591A8E588B003F9335 /* mongo */; };
 		2A19F85E1A8E5BF9003F9335 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A19F85D1A8E5BF9003F9335 /* DefaultPreferences.plist */; };
+		2A319B9B1A8EC7050099913A /* mongod in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A319B9A1A8EC7050099913A /* mongod */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2A319B9C1A8EC86C0099913A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1768441A80F76900A7790F /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +29,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		2A19F85B1A8E58EF003F9335 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 6;
+			buildActionMask = 12;
+			dstPath = Mongo;
+			dstSubfolderSpec = 7;
 			files = (
-				2A19F85C1A8E58FE003F9335 /* mongo in CopyFiles */,
+				2A319B9B1A8EC7050099913A /* mongod in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +50,8 @@
 		2A17684B1A80F76900A7790F /* MongoBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongoBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1768501A80F76900A7790F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1768511A80F76900A7790F /* MongoBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MongoBoxTests.m; sourceTree = "<group>"; };
-		2A19F8591A8E588B003F9335 /* mongo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mongo; sourceTree = "<group>"; };
 		2A19F85D1A8E5BF9003F9335 /* DefaultPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPreferences.plist; sourceTree = "<group>"; };
+		2A319B9A1A8EC7050099913A /* mongod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mongod; path = MongoBox/mongo/mongod; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +75,7 @@
 		2A17682F1A80F76900A7790F = {
 			isa = PBXGroup;
 			children = (
+				2A319B9A1A8EC7050099913A /* mongod */,
 				2A17683A1A80F76900A7790F /* MongoBox */,
 				2A17684E1A80F76900A7790F /* MongoBoxTests */,
 				2A1768391A80F76900A7790F /* Products */,
@@ -94,7 +94,6 @@
 		2A17683A1A80F76900A7790F /* MongoBox */ = {
 			isa = PBXGroup;
 			children = (
-				2A19F8591A8E588B003F9335 /* mongo */,
 				2A17683D1A80F76900A7790F /* AppDelegate.h */,
 				2A17683E1A80F76900A7790F /* AppDelegate.m */,
 				2A1768421A80F76900A7790F /* Images.xcassets */,
@@ -134,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A1768371A80F76900A7790F /* MongoBox */ = {
+		2A1768371A80F76900A7790F /* Floppy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A1768551A80F76900A7790F /* Build configuration list for PBXNativeTarget "MongoBox" */;
+			buildConfigurationList = 2A1768551A80F76900A7790F /* Build configuration list for PBXNativeTarget "Floppy" */;
 			buildPhases = (
 				2A1768341A80F76900A7790F /* Sources */,
 				2A1768351A80F76900A7790F /* Frameworks */,
@@ -147,7 +146,7 @@
 			);
 			dependencies = (
 			);
-			name = MongoBox;
+			name = Floppy;
 			productName = MongoBox;
 			productReference = 2A1768381A80F76900A7790F /* MongoBox.app */;
 			productType = "com.apple.product-type.application";
@@ -201,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A1768371A80F76900A7790F /* MongoBox */,
+				2A1768371A80F76900A7790F /* Floppy */,
 				2A17684A1A80F76900A7790F /* MongoBoxTests */,
 			);
 		};
@@ -212,10 +211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A19F85A1A8E588B003F9335 /* mongo in Resources */,
 				2A19F85E1A8E5BF9003F9335 /* DefaultPreferences.plist in Resources */,
 				2A1768431A80F76900A7790F /* Images.xcassets in Resources */,
-				2A1768461A80F76900A7790F /* MainMenu.xib in Resources */,
+				2A319B9C1A8EC86C0099913A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +249,7 @@
 /* Begin PBXTargetDependency section */
 		2A17684D1A80F76900A7790F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A1768371A80F76900A7790F /* MongoBox */;
+			target = 2A1768371A80F76900A7790F /* Floppy */;
 			targetProxy = 2A17684C1A80F76900A7790F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A1768551A80F76900A7790F /* Build configuration list for PBXNativeTarget "MongoBox" */ = {
+		2A1768551A80F76900A7790F /* Build configuration list for PBXNativeTarget "Floppy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A1768561A80F76900A7790F /* Debug */,
