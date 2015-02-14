@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CCNPreferencesWindowController.h>
 
 @interface AppDelegate ()
 
@@ -79,17 +80,19 @@
     
     NSMutableArray *arguments = [[NSMutableArray alloc] init];
     [arguments addObject:dataLocation];
-//    [self.buildButton setEnabled:NO];
-//    [self.spinner startAnimation:self];
     
     [self runScript:arguments];
 }
 
 - (void)stopTask:(id)sender {
-    // Empty yet
+    // Terminate task before exit
     if (self.mongoTask.isRunning) {
         [self.mongoTask terminate];
     }
+}
+
+- (IBAction)openPreferences:(id)sender {
+    
 }
 
 - (void)runScript:(NSArray*)arguments {

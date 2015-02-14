@@ -8,13 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class CCNPreferencesWindowController;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) CCNPreferencesWindowController *preferences;
 @property (weak) IBOutlet NSMenu *mainMenu;
+@property (weak) IBOutlet NSTextField *welcomeLabel;
 
-- (IBAction)startTask:(id)sender;
-- (IBAction)stopTask:(id)sender;
 - (IBAction)showLogView:(id)sender;
+- (IBAction)openPreferences:(id)sender;
+- (void)startTask:(id)sender;
+- (void)stopTask:(id)sender;
 
 @property (weak) IBOutlet NSMenuItem *openPreferences;
 @property (unsafe_unretained) IBOutlet NSTextView *logView;

@@ -34,6 +34,20 @@
                ReferencedContainer = "container:Floppy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2A1768371A80F76900A7790F"
+               BuildableName = "Mongod.app"
+               BlueprintName = "Mongod"
+               ReferencedContainer = "container:Mongod.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -68,7 +82,7 @@
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
             BuildableName = "Mongod.app"
             BlueprintName = "Mongod"
-            ReferencedContainer = "container:Floppy.xcodeproj">
+            ReferencedContainer = "container:Mongod.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -86,7 +100,7 @@
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
             BuildableName = "Mongod.app"
             BlueprintName = "Mongod"
-            ReferencedContainer = "container:Floppy.xcodeproj">
+            ReferencedContainer = "container:Mongod.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -95,6 +109,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Mongod"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -18,6 +18,7 @@
                 <outlet property="mainMenu" destination="KKI-zZ-odl" id="etF-nu-9j5"/>
                 <outlet property="mongoStateMenuItem" destination="oVR-7Z-7Vn" id="FUg-7s-nz2"/>
                 <outlet property="openPreferences" destination="Ia4-kE-jEp" id="gnk-fF-kVJ"/>
+                <outlet property="welcomeLabel" destination="g1K-tM-TmG" id="XCo-rx-MEM"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -684,14 +685,6 @@
                         <rect key="frame" x="20" y="73" width="209" height="72"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MongoDB Logo" id="0kU-40-9fm"/>
                     </imageView>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-tM-TmG">
-                        <rect key="frame" x="261" y="60" width="317" height="34"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="You now have a Mongo server running locally. Look in the menu bar!" id="qd9-hv-ncZ">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-j7-zdd">
                         <rect key="frame" x="261" y="102" width="275" height="43"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome to Mongo" id="zfB-Yo-lub">
@@ -706,6 +699,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="openPreferences:" target="Voe-Tx-rLC" id="4wu-SE-3HK"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-KT-QgI">
                         <rect key="frame" x="331" y="13" width="134" height="32"/>
@@ -714,6 +710,14 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-tM-TmG">
+                        <rect key="frame" x="261" y="60" width="317" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="You now have a Mongo server running locally. Look in the menu bar!" id="qd9-hv-ncZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="440" y="270.5"/>
