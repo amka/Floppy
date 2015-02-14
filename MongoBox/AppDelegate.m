@@ -44,7 +44,7 @@
         [PreferencesUpdateViewController new],
     ]];
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowLogOnStartup"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ShowLogOnStart"]) {
         [self showLogView:self];
     }
     
