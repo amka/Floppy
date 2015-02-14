@@ -12,18 +12,90 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY" userLabel="General View">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="443" height="229"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEW-01-Xkr">
-                    <rect key="frame" x="214" y="128" width="52" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="General" id="vV3-r9-InE">
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Itk-z4-ka1">
+                    <rect key="frame" x="18" y="139" width="407" height="18"/>
+                    <buttonCell key="cell" type="check" title="Show Log window on startup" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="70R-9g-XZ4">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="D8f-be-1dQ" name="value" keyPath="values.ShowLogOnStart" id="qZO-5k-sKT"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tse-qT-bIb">
+                    <rect key="frame" x="18" y="166" width="407" height="18"/>
+                    <buttonCell key="cell" type="check" title="Show Welcome window when Mongod starts" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wzq-cM-cad">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="D8f-be-1dQ" name="value" keyPath="values.ShowWelcomeOnStart" id="mEP-BP-hIY"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zV-rj-MJz">
+                    <rect key="frame" x="18" y="193" width="407" height="18"/>
+                    <buttonCell key="cell" type="check" title="Start Mongod after login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ZGG-FP-BGq">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="D8f-be-1dQ" name="value" keyPath="values.StartOnLogin" id="7j0-CY-XNR"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-Wi-GO0">
+                    <rect key="frame" x="18" y="82" width="93" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Data Directory" id="rWw-Gr-Unw">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q7l-F0-Sen">
+                    <rect key="frame" x="175" y="82" width="250" height="14"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Changes take effects after restart" id="4WN-24-Zw3">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojY-Jh-iOT">
+                    <rect key="frame" x="20" y="52" width="403" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ErT-vq-Ge1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="D8f-be-1dQ" name="value" keyPath="values.DBPath" id="iH2-Fg-WA3"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypM-11-WMR">
+                    <rect key="frame" x="14" y="16" width="139" height="32"/>
+                    <buttonCell key="cell" type="push" title="Reveal in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gR9-KJ-K2g">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uN-gP-dhi">
+                    <rect key="frame" x="152" y="16" width="101" height="32"/>
+                    <buttonCell key="cell" type="push" title="Choose…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AFk-3F-tuK">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJA-o3-A5A">
+                    <rect key="frame" x="306" y="16" width="123" height="32"/>
+                    <buttonCell key="cell" type="push" title="Set to default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YUo-5F-3LS">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
             </subviews>
+            <point key="canvasLocation" x="-94.5" y="472.5"/>
         </customView>
+        <userDefaultsController representsSharedInstance="YES" id="D8f-be-1dQ"/>
     </objects>
 </document>
