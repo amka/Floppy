@@ -671,53 +671,52 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="MongoBox" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Welcome to Mongo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="62"/>
+            <rect key="contentRect" x="335" y="390" width="596" height="165"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="62"/>
+                <rect key="frame" x="0.0" y="0.0" width="596" height="165"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlh-AE-JYh">
-                        <rect key="frame" x="96" y="14" width="70" height="32"/>
-                        <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sJu-Ff-aQ7">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="stopTask:" target="Voe-Tx-rLC" id="wSv-74-jXN"/>
-                        </connections>
-                    </button>
-                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-yB-0d8">
-                        <rect key="frame" x="435" y="18" width="29" height="26"/>
-                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="byh-Y5-9z8">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNy-g4-A5Z">
-                        <rect key="frame" x="374" y="21" width="59" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Log view" id="yFi-bD-RuC">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJh-EM-Fcf">
+                        <rect key="frame" x="20" y="73" width="209" height="72"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="MongoDB Logo" id="0kU-40-9fm"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-tM-TmG">
+                        <rect key="frame" x="261" y="60" width="317" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="You now have a Mongo server running locally. Look in the menu bar!" id="qd9-hv-ncZ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-Sw-Fng">
-                        <rect key="frame" x="14" y="14" width="70" height="32"/>
-                        <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bfc-h6-gxg">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-j7-zdd">
+                        <rect key="frame" x="261" y="102" width="275" height="43"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome to Mongo" id="zfB-Yo-lub">
+                            <font key="font" size="28" name="HelveticaNeue-Bold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-kf-rJ9">
+                        <rect key="frame" x="468" y="13" width="114" height="32"/>
+                        <buttonCell key="cell" type="push" title="Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AUH-Va-O6I">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
-                        <connections>
-                            <action selector="startTask:" target="Voe-Tx-rLC" id="PqM-yO-mNT"/>
-                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-KT-QgI">
+                        <rect key="frame" x="331" y="13" width="134" height="32"/>
+                        <buttonCell key="cell" type="push" title="Documentation" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yic-Lg-z2I">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="376" y="190"/>
+            <point key="canvasLocation" x="440" y="270.5"/>
         </window>
         <window title="Mongo Log" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="0fv-IO-gMR" userLabel="Log Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -765,7 +764,7 @@
                     <constraint firstItem="A20-am-aQc" firstAttribute="leading" secondItem="wPo-AL-zwz" secondAttribute="leading" constant="-1" id="Wc3-RC-IZ2"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="274" y="523"/>
+            <point key="canvasLocation" x="382" y="572"/>
         </window>
         <menu id="KKI-zZ-odl" userLabel="Main Menu">
             <items>
@@ -793,4 +792,7 @@
             <point key="canvasLocation" x="101.5" y="256.5"/>
         </menu>
     </objects>
+    <resources>
+        <image name="MongoDB Logo" width="221" height="76"/>
+    </resources>
 </document>

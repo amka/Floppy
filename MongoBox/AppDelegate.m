@@ -27,8 +27,8 @@
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.menu = self.mainMenu;
-    self.statusItem.image = [NSImage imageNamed:@"Floppy"];
-    self.statusItem.alternateImage = [NSImage imageNamed:@"FloppyAlt"];
+    self.statusItem.image = [NSImage imageNamed:@"Mongo Item"];
+    self.statusItem.alternateImage = [NSImage imageNamed:@"Mongo Item Alt"];
     
     self.logView.font = [NSFont fontWithName:@"Menlo" size:11.0];
     self.logView.textColor = [NSColor colorWithCalibratedWhite:0.9 alpha:1.0];

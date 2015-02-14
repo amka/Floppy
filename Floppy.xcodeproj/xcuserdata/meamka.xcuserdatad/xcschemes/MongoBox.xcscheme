@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A1768371A80F76900A7790F"
-               BuildableName = "Floppy.app"
-               BlueprintName = "Floppy"
+               BuildableName = "Mongod.app"
+               BlueprintName = "Mongod"
                ReferencedContainer = "container:Floppy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A17684A1A80F76900A7790F"
-               BuildableName = "MongoBoxTests.xctest"
-               BlueprintName = "MongoBoxTests"
+               BuildableName = "FloppyTests.xctest"
+               BlueprintName = "FloppyTests"
                ReferencedContainer = "container:Floppy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +42,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A17684A1A80F76900A7790F"
-               BuildableName = "MongoBoxTests.xctest"
-               BlueprintName = "MongoBoxTests"
-               ReferencedContainer = "container:Floppy.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "Floppy.app"
-            BlueprintName = "Floppy"
+            BuildableName = "Mongod.app"
+            BlueprintName = "Mongod"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "Floppy.app"
-            BlueprintName = "Floppy"
+            BuildableName = "Mongod.app"
+            BlueprintName = "Mongod"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A1768371A80F76900A7790F"
-            BuildableName = "Floppy.app"
-            BlueprintName = "Floppy"
+            BuildableName = "Mongod.app"
+            BlueprintName = "Mongod"
             ReferencedContainer = "container:Floppy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
