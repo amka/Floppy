@@ -37,7 +37,7 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zV-rj-MJz">
                     <rect key="frame" x="18" y="193" width="407" height="18"/>
-                    <buttonCell key="cell" type="check" title="Start Mongod after login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ZGG-FP-BGq">
+                    <buttonCell key="cell" type="check" title="Start Mongod after login" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="ZGG-FP-BGq">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -63,7 +63,7 @@
                 </textField>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojY-Jh-iOT">
                     <rect key="frame" x="20" y="52" width="403" height="22"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ErT-vq-Ge1">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ErT-vq-Ge1">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -74,21 +74,27 @@
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypM-11-WMR">
                     <rect key="frame" x="14" y="16" width="139" height="32"/>
-                    <buttonCell key="cell" type="push" title="Reveal in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gR9-KJ-K2g">
+                    <buttonCell key="cell" type="push" title="Reveal in Finder" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gR9-KJ-K2g">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="revealInFinder:" target="-2" id="Jnm-lA-lD2"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uN-gP-dhi">
                     <rect key="frame" x="152" y="16" width="101" height="32"/>
-                    <buttonCell key="cell" type="push" title="Choose…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AFk-3F-tuK">
+                    <buttonCell key="cell" type="push" title="Choose…" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AFk-3F-tuK">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="selectDBDirectory:" target="-2" id="doa-Y5-1vi"/>
+                    </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJA-o3-A5A">
                     <rect key="frame" x="306" y="16" width="123" height="32"/>
-                    <buttonCell key="cell" type="push" title="Set to default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YUo-5F-3LS">
+                    <buttonCell key="cell" type="push" title="Set to default" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YUo-5F-3LS">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

@@ -26,4 +26,9 @@
 - (NSString *)preferenceTitle { return @"General"; }
 - (NSImage *)preferenceIcon { return [NSImage imageNamed:NSImageNamePreferencesGeneral]; }
 
+- (IBAction)revealInFinder:(id)sender {
+}
+
+- (IBAction)selectDBDirectory:(id)sender {
+}
 @end

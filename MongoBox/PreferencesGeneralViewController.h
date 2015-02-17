@@ -10,4 +10,8 @@
 
 @interface PreferencesGeneralViewController : NSViewController
 
+- (IBAction)revealInFinder:(id)sender;
+- (IBAction)selectDBDirectory:(id)sender;
+
+
 @end
