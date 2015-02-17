@@ -97,7 +97,7 @@
 - (void)stopTask:(id)sender {
     // Terminate task before exit
     if (self.mongoTask.isRunning) {
-        [self.mongoTask terminate];
+        [self.mongoTask interrupt];
     }
 }
 
